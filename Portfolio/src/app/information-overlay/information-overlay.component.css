@@ -1,12 +1,14 @@
 .img-container{
   position: relative;
+
 }
 
 img {
-  width: 1024px;
+  background-size: 100% auto;
 }
 
-.overlay {
+
+.infoOverlay {
   text-align: center;
   color: #fff;
   font-size: 50px;
