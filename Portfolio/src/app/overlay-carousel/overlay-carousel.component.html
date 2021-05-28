@@ -1,7 +1,7 @@
 <ngb-carousel *ngIf="images">
-  <ng-template ngbSlide *ngFor="let i of images">
+  <ng-template ngbSlide *ngFor="let image of images">
     <div class="picsum-img-wrapper">
-      <img [src]="i" alt="Image Slide">
+      <img [src]="image" alt="Image Slide">
     </div>
   </ng-template>
 </ngb-carousel>
