@@ -1,0 +1,8 @@
+.picsum-img-wrapper{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-size: 100% auto;
+  width: 100%;
+}
+

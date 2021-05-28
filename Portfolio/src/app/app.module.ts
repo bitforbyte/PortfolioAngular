@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { InformationOverlayComponent } from './information-overlay/information-overlay.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { OverlayCarouselComponent } from './overlay-carousel/overlay-carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InformationOverlayComponent
+    InformationOverlayComponent,
+    OverlayCarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
