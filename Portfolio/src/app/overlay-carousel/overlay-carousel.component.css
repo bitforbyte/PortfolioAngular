@@ -9,10 +9,3 @@
 .picsum-img-wrapper img {
   width: 100%;
 }
-
-.carousel-control-prev-icon {
-  z-index: 20;
-}
-.carousel-control-next-icon {
-  z-index: 20;
-}

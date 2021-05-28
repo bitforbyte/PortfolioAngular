@@ -8,7 +8,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class OverlayCarouselComponent implements OnInit {
 
-  images = ['Dark_Road.webp', 'highway.webp', 'TrainTracks.webp'].map((n) => `../assets/img/large/${n}`);
+  images = ['highway.webp', 'TrainTracks.webp', 'Dark_Road.webp', ].map((n) => `../assets/img/large/${n}`);
   constructor(config: NgbCarouselConfig) {
     config.interval = 10000;
     config.showNavigationArrows = false;
