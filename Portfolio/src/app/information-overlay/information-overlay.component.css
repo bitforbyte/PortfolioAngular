@@ -1,6 +1,7 @@
 .img-container{
   position: relative;
   display: flex;
+  height: 100vh;
 }
 
 img {
@@ -9,7 +10,7 @@ img {
 }
 
 /* This is the overlay that contains my name LinkedIn/Github links and has a dark overlay */
-.infoOverlay {
+.topOverlay {
   text-align: center;
   background-size: 100% auto;
   color: #fff;
@@ -25,9 +26,17 @@ img {
   z-index: 5;
 }
 
-/* This is to seperate the links to a percent */
-.infoOverlay a {
+/* topOverlay is to seperate the links to a percent */
+.topOverlay a {
   padding: 2%;
+  color: #fff
+}
+
+.overlayInfo {
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 h1{
