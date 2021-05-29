@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { InformationOverlayComponent } from './information-overlay/information-overlay.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OverlayCarouselComponent } from './overlay-carousel/overlay-carousel.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InformationOverlayComponent,
-    OverlayCarouselComponent
+    OverlayCarouselComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

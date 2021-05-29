@@ -1,0 +1,12 @@
+.nav-link{
+  font-size: 1vw;
+  color:#9d9d9d;
+}
+
+.nav-link :active{
+  color:blue;
+}
+
+.NgbNavItem {
+  color: grey;
+}
