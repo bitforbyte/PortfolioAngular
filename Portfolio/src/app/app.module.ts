@@ -6,17 +6,23 @@ import { InformationOverlayComponent } from './information-overlay/information-o
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OverlayCarouselComponent } from './overlay-carousel/overlay-carousel.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SectionsComponent } from './sections/sections.component';
+import { SectionComponent } from './section/section.component';
+import { InfiniteTypeDeleteModule } from "ngx-sbz-type-delete";
 
 @NgModule({
   declarations: [
     AppComponent,
     InformationOverlayComponent,
     OverlayCarouselComponent,
-    NavBarComponent
+    NavBarComponent,
+    SectionsComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    InfiniteTypeDeleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
