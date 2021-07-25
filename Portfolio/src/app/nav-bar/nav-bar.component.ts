@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,10 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  @ViewChild('stickyMenu') menuElement: ElementRef;
+
+  sticky: boolean = false;
+  elementPostion: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  ngAfterViewInit(){
+    this.elementPostion = this.menuElement.nativeElement.offsetTop;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+    handleScroll(){
+      const windowScroll = window.pageYOffset;
+      if (windowScroll >= this.elementPostion){
+        this.sticky = true;
+      } else {
+        this.sticky = false;
+      }
+    }
+
 
   toHome(){
     this.smoothScrollToSection("home");

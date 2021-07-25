@@ -10,3 +10,10 @@
 .NgbNavItem {
   color: grey;
 }
+
+.sticky{
+  position:fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+}

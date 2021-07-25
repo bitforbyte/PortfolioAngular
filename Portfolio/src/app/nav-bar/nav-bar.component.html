@@ -1,9 +1,6 @@
-<ul ngbNav #nav="ngbNav" class="nav-tabs">
+<ul ngbNav #stickyMenu [class.sticky]="sticky" #nav="ngbNav" class="nav-tabs">
   <li ngbNavItem>
-    <a ngbNavLink class="Portfolio">Portfolio</a>
-  </li>
-  <li ngbNavItem>
-    <a ngbNavLink (click)="toHome()" >Home</a>
+    <a ngbNavLink  (click)="toHome()"  class="Portfolio">Portfolio</a>
   </li>
   <li ngbNavItem>
     <a ngbNavLink (click)="toAbout()">About</a>
