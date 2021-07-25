@@ -12,4 +12,28 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toHome(){
+    this.smoothScrollToSection("home");
+  }
+
+  toAbout(){
+    this.smoothScrollToSection("about");
+  }
+
+  toExperience(){
+    this.smoothScrollToSection("experience");
+  }
+
+  toSkills(){
+    this.smoothScrollToSection("Skills");
+  }
+
+  toContactMe(){
+    this.smoothScrollToSection("ContactMe");
+  }
+
+  smoothScrollToSection(tagValue: string){
+    document.getElementById(tagValue)?.scrollIntoView({behavior: "smooth"});
+  }
+
 }
