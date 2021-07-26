@@ -10,6 +10,7 @@ import { SectionsComponent } from './sections/sections.component';
 import { SectionComponent } from './section/section.component';
 import { InfiniteTypeDeleteModule } from "ngx-sbz-type-delete";
 import { TypingAnimationComponent } from './typing-animation/typing-animation.component';
+import { SectionAboutComponent } from './section-about/section-about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TypingAnimationComponent } from './typing-animation/typing-animation.co
     NavBarComponent,
     SectionsComponent,
     SectionComponent,
-    TypingAnimationComponent
+    TypingAnimationComponent,
+    SectionAboutComponent,
   ],
   imports: [
     BrowserModule,
