@@ -9,6 +9,7 @@ export class NavBarComponent implements OnInit {
 
   @ViewChild('stickyMenu') menuElement: ElementRef;
 
+
   sticky: boolean = false;
   elementPostion: any;
 
@@ -20,6 +21,7 @@ export class NavBarComponent implements OnInit {
   ngAfterViewInit(){
     this.elementPostion = this.menuElement.nativeElement.offsetTop;
   }
+
 
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
@@ -53,7 +55,16 @@ export class NavBarComponent implements OnInit {
   }
 
   smoothScrollToSection(tagValue: string){
-    document.getElementById(tagValue)?.scrollIntoView({behavior: "smooth"});
+    const yOffset = -1*this.menuElement.nativeElement.offsetHeight;
+    const element = document.getElementById(tagValue);
+
+    if (element === null){
+      alert('oopsie')
+    } else {
+      const yValue = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      console.log(this.menuElement.nativeElement.offsetHeight);
+      window.scrollTo({top: yValue, behavior: 'smooth'});
+    }
   }
 
 }

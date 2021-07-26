@@ -11,9 +11,14 @@
   color: grey;
 }
 
+ul {
+  background-color: #4d4d4d;
+}
+
 .sticky{
-  position:fixed;
+  position:sticky;
   top: 0;
   overflow: hidden;
   z-index: 10;
+  width: 100%;
 }
