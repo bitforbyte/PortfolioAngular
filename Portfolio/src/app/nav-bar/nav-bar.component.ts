@@ -19,10 +19,18 @@ export class NavBarComponent implements OnInit {
   }
 
   ngAfterViewInit(){
+    // Using Anchor to avoid a page reload causing offset to be incorrect
     this.elementPostion = this.ngNavAnchor.nativeElement.offsetTop;
   }
 
+  // Detect when the window is resized and adjust the height offset
+  @HostListener('window:resize', ['$event'])
+    onResize(event: UIEvent) {
+      const w = event.target as Window;
+      this.elementPostion = w.innerHeight;
+    }
 
+  // Listener that will determine if navbar needs to follow window
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
