@@ -7,7 +7,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OverlayCarouselComponent } from './overlay-carousel/overlay-carousel.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SectionsComponent } from './sections/sections.component';
-import { SectionComponent } from './section/section.component';
 import { InfiniteTypeDeleteModule } from "ngx-sbz-type-delete";
 import { TypingAnimationComponent } from './typing-animation/typing-animation.component';
 import { SectionAboutComponent } from './section-about/section-about.component';
@@ -22,7 +21,6 @@ import { SectionExperienceComponent } from './section-experience/section-experie
     OverlayCarouselComponent,
     NavBarComponent,
     SectionsComponent,
-    SectionComponent,
     TypingAnimationComponent,
     SectionAboutComponent,
     SectionSkillsComponent,
