@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
+  @ViewChild('ngNavAnchor') ngNavAnchor: ElementRef;
   @ViewChild('stickyMenu') menuElement: ElementRef;
 
 
@@ -19,7 +19,7 @@ export class NavBarComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    this.elementPostion = this.menuElement.nativeElement.offsetTop;
+    this.elementPostion = this.ngNavAnchor.nativeElement.offsetTop;
   }
 
 
