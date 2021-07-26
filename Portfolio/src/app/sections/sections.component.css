@@ -5,3 +5,8 @@
   z-index: -1;
   padding-bottom: 100vw;
 }
+
+p {
+  font-size: 2vw;
+  color:#9d9d9d;
+}
