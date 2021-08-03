@@ -1,0 +1,24 @@
+h2 {
+  text-align: center;
+}
+
+.skillsSection {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: justify;
+  color: #ecf0f1;
+  background-color:#333;
+  background-image: linear-gradient(to bottom right, rgb(68, 67, 67) , #333);
+  vertical-align: middle;
+  align-items: center;
+  height:auto;
+}
+
+.skillGrid {
+  margin: 0 2%;
+  align-items: center;
+}
+
+hr {
+  margin: 2% 2%;
+}
