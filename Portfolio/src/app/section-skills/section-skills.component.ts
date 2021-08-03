@@ -44,6 +44,29 @@ export class SectionSkillsComponent implements OnInit {
           iconImagePath: '../../assets/img/icons/icon_java.png', title: 'Java', description: 'Experienced in using java to develop different applications including a Android Todo list Application'
         }
       ]
+    },
+    {
+      title: "Coding Environments",
+      skills : [
+        {
+          iconImagePath: '../../assets/img/icons/icon_visstd.png', title: 'Visual Studio Pro/Code', description: 'Using both Visual Studio pro and VS code for day to day work'
+        },
+        {
+          iconImagePath: '../../assets/img/icons/icon_vim.png', title: 'Vim', description: 'Familiar with working in vim to write code'
+        },
+        {
+          iconImagePath: '../../assets/img/icons/icon_git.png', title: 'Git', description: 'Experienced in both the command line interface and desktop interface'
+        },
+        {
+          iconImagePath: '../../assets/img/icons/icon_jenkins.png', title: 'Jenkins', description: 'Using Jenkins to manage our continious deployment'
+        },
+        {
+          iconImagePath: '../../assets/img/icons/icon_docker.png', title: 'Docker', description: 'Using Docker in our applications and familiar with it to containerizing .NET Core'
+        },
+        {
+          iconImagePath: '../../assets/img/icons/icon_postman.png', title: 'Postman', description: 'Familiar working with postman to test REST/SOAP apis'
+        }
+      ]
     }
 
   ]
