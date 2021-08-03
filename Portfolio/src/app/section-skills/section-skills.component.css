@@ -27,7 +27,7 @@ div.cardBackground {
   margin: 2%;
 }
 
-img {
+.icon {
   width: 50px;
 }
 
@@ -38,6 +38,7 @@ img {
 .skillGrid {
   margin: 0 2%;
   align-items: center;
+
 }
 
 hr {
