@@ -1,3 +1,19 @@
+# Kendall's Portfolio
+This Repository is for my portfolio
+
+## Build using docker
+Clone this repo and navigate into Portfolio
+Run docker-compose run web
+Navigate to `http://localhost:8080`
+
+
+## Build manually
+Clone this Repo into a directory
+Navigate into Portfolio
+Have angular installed and build ng serve
+Navigate to `http://localhost:4200/`
+
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
@@ -5,11 +21,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
