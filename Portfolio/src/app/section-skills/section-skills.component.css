@@ -14,8 +14,8 @@ h2, h3 {
   height:auto;
 }
 
-.cardBackground {
-  background-color: rgba(51, 51, 51, 0.4);
+div.cardBackground {
+  background: rgba(51, 51, 51, 0.4);
 }
 
 .uk-card-body {
