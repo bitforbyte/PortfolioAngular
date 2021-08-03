@@ -5,33 +5,15 @@
   <div class="cardBackground uk-card uk-card-default uk-card-body uk-border-rounded">
     <h3 class="uk-card-title">Front End</h3>
     <div class="skillGrid uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > div > p">
-      <div>
+
+      <div *ngFor="let skill of skillsFrontEnd">
         <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
 
-          <img src ="../../assets/img/icons/icon_html5.png">
-          <h3 class="uk-card-title">HTML 5/CSS</h3>
-          <p>Experienced with building responsive programs using HTML5. Tutored HTML5 during a Web design course at Walters State</p>
+          <img src ="{{skill.iconImagePath}}">
+          <h3 class="uk-card-title">{{skill.title}}</h3>
+          <p>{{skill.description}}</p>
 
         </div>
-      </div>
-
-      <div>
-        <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-
-          <img src ="../../assets/img/icons/icon_angular.png">
-          <h3 class="uk-card-title">Angular</h3>
-          <p>Experience with debugging and developing front end applications using angular</p>
-
-        </div>
-      </div>
-
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <img src ="../../assets/img/icons/icon_js.png">
-            <h3 class="uk-card-title">Javascript/TypeScript</h3>
-            <p>Experience in Javascript for both websites as well as Node js to create Applications</p>
-
-          </div>
       </div>
     </div>
   </div>
@@ -39,64 +21,16 @@
 
   <div class="cardBackground uk-card uk-card-default uk-card-body uk-border-rounded">
     <h3 class="uk-card-title">Back End</h3>
-    <div class="skillGrid uk-grid-match uk-child-width-expand@s uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center " uk-grid uk-grid uk-height-match="target: > div > div > p">
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+    <div class="skillGrid uk-grid-match uk-child-width-expand@s uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center " uk-grid uk-height-match="target: > div > div > p">
+      <div class="skillItems" >
+        <div class="skillItems uk-card uk-card-default uk-card-body uk-border-rounded" *ngFor="let skill of skillsBackEnd">
 
-            <img src ="../../assets/img/icons/icon_cs.png">
+          <img src ="{{skill.iconImagePath}}">
+          <h3 class="uk-card-title">{{skill.title}}</h3>
+          <p>{{skill.description}}</p>
 
-            <h3 class="uk-card-title">C#</h3>
-            <p>
-              Knowledge in using C# language to build applications, such as Map Reduce(Listed below), also familiar using lambda functions, event handling, and using the .NET framework
-            </p>
-
-
-          </div>
+        </div>
       </div>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <img src ="../../assets/img/icons/icon_sql.png">
-            <h3 class="uk-card-title">SQL</h3>
-            <p>Experience using SQL to interact with databases, created a working bookstore database while attending Walters State</p>
-
-          </div>
-      </div>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <img src ="../../assets/img/icons/icon_cpp.png">
-            <h3 class="uk-card-title">C++</h3>
-            <p>Strong background in C++, including knowledge in dynamic programing, Network Flow, B-Trees , and search algorithms</p>
-
-          </div>
-      </div>
-    </div>
-    <div class="skillGrid uk-grid-match uk-child-width-expand@s uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center " uk-grid uk-grid uk-height-match="target: > div > div > p">
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-
-            <img src ="../../assets/img/icons/icon_c.png">
-
-            <h3 class="uk-card-title">C</h3>
-            <p>
-              Strong background in C++, including knowledge in dynamic programing, Network Flow, B-Trees , and search algorithms
-            </p>
-          </div>
-      </div>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <img src ="../../assets/img/icons/icon_java.png">
-            <h3 class="uk-card-title">Java</h3>
-            <p>Experienced in using java to develop different applications including a Android Todo list Application</p>
-          </div>
-      </div>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <img src ="../../assets/img/icons/python.png">
-            <h3 class="uk-card-title">Python</h3>
-            <p>Experience using python to develop different types of projects from web-scrappers to scientific Computation</p>
-          </div>
-      </div>
-    </div>
 
 
   </div>
