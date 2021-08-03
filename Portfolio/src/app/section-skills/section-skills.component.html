@@ -5,16 +5,15 @@
   <div class="Skills" *ngFor="let skillObj of skillList">
     <div class="cardBackground uk-card uk-card-default uk-card-body uk-border-rounded">
       <h3 class="uk-card-title">{{skillObj.title}}</h3>
-      <div class="skillGrid uk-grid-match uk-child-width-expand@s uk-grid-column-small uk-grid-row-large uk-text-center " uk-grid uk-height-match="target: > div > div > p">
-        <div class="skill uk-width-1-3"*ngFor="let skill of skillObj.skills">
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded " >
-            <img class="icon" src ="{{skill.iconImagePath}}">
-            <h3 class="uk-card-title">{{skill.title}}</h3>
-            <p>{{skill.description}}</p>
-          </div>
+      <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > div > p">
+        <div *ngFor="let skill of skillObj.skills">
+            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+              <img class="icon" src ="{{skill.iconImagePath}}">
+              <h3 class="uk-card-title">{{skill.title}}</h3>
+              <p>{{skill.description}}</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
