@@ -20,11 +20,13 @@
     height:auto;
 }
 
+.uk-grid-margin
+{
+  text-align: center;
+  margin: 0% 25%;
+}
+
 .textBox {
-  width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: 2%;
   min-height: 1px;
   height: 100%;
 }
