@@ -11,8 +11,6 @@ import { InfiniteTypeDeleteModule } from "ngx-sbz-type-delete";
 import { TypingAnimationComponent } from './typing-animation/typing-animation.component';
 import { SectionAboutComponent } from './section-about/section-about.component';
 import { SectionSkillsComponent } from './section-skills/section-skills.component';
-import { SectionContactMeComponent } from './section-contact-me/section-contact-me.component';
-import { SectionExperienceComponent } from './section-experience/section-experience.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +21,7 @@ import { SectionExperienceComponent } from './section-experience/section-experie
     SectionsComponent,
     TypingAnimationComponent,
     SectionAboutComponent,
-    SectionSkillsComponent,
-    SectionContactMeComponent,
-    SectionExperienceComponent,
+    SectionSkillsComponent
   ],
   imports: [
     BrowserModule,

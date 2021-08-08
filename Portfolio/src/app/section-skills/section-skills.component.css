@@ -28,7 +28,8 @@ div.cardBackground {
 }
 
 img {
-  width: 50px;
+  width: auto;
+  height: 50px;
 }
 
 .uk-card-title {
@@ -38,7 +39,6 @@ img {
 .skillGrid {
   margin: 0 2%;
   align-items: center;
-
 }
 
 hr {
