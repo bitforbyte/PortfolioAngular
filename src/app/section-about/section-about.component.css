@@ -1,10 +1,10 @@
 .aboutImage {
   display: inline;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 2%;
   padding-left: 2%;
   padding-right: 2%;
-  max-width: 50%;
+  height: 100%;
+  width: auto;
 }
 
 .aboutSection {
@@ -23,17 +23,20 @@
 .uk-grid-margin
 {
   text-align: center;
-  margin: 0% 25%;
+  margin: 0% 2%;
+  height: auto;
 }
 
 .textBox {
   min-height: 1px;
-  height: 100%;
+  font-size: 1vh;
+  height: auto;
+  width: 100%;
 }
 
 p {
   display: block;
-  font-size: 1vw;
+  font-size: 15px;
   color: #ecf0f1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.42857143;
